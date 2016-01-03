@@ -202,3 +202,11 @@ li.active,.active{
 #WzTtDiV{
 	z-index:2010 !important;
 }
+.summarytext .active{
+	color:#333 !important;
+	border:none;
+}
+.tab-content>.active{
+	margin-top:20px;
+	padding:4px;
+}
