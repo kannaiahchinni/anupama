@@ -86,12 +86,12 @@ footer{
 	padding:10px 11px 20px;
 	clear:both;
 }
-#canto1,#canto2,#canto3{
+#canto1,#canto2,#canto3,#canto4{
 	max-height:400px;
 	font-size:13px;
 	overflow-y:scroll;
 }
-#canto1 li, #canto2 li,#canto3 li{
+#canto1 li, #canto2 li,#canto3 li,#canto4 li{
 	list-style-type:none;
 	margin-left:-30px;
 }

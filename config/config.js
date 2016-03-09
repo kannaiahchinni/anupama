@@ -22,7 +22,13 @@
 		}).state('home.slokas',{
 			url:'/slokas',
 			templateUrl:'html/sv1/allslokas.html'
-		})
+		}).state('poet',{
+			url:'/poet',
+			templateUrl:'html/poet.html'
+		})/*.state('epic',{
+			url:'/epic',
+			templateUrl:'html/epic.html'
+		})*/
 		$urlRouterProvider.otherwise('/');
 	}]).run(function($state, $rootScope,Index,service){
 		$("#menu-toggle").click(function(e) {

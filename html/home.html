@@ -34,7 +34,16 @@
   					</ul>
   
             	</li>
-            	<li>Canto 4</li>
+                <li>
+                    <a href="javascript:;" data-parent="#accordion"  data-toggle="collapse" data-target="#canto4" ng-click="showAllSlokas(4)" >Canto 4 <i class="fa fa-fw fa-caret-down"></i></a>
+                    
+                    <ul id="canto4" class="collapse" aria-expanded="false" >
+                        <li><b>Sloka Index</b></li>
+                        <li><input type="text" ng-model="cantoText4" class="form-control" placeholder="search text from slokas"/></li>
+                        <li ng-repeat="menu in cantoIndex.canto4 | filter: cantoText4" ><a ng-click="load(4,menu)" ng-class="{active:active == menu.slokaNo}">{{menu.slokaNo}}-{{menu.sloka }}</a></li>
+                    </ul>
+  
+                </li>
             	<li>Canto 5</li>
             	<li>Canto 6</li>
             
