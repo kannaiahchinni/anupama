@@ -91,6 +91,15 @@ footer{
 	font-size:13px;
 	overflow-y:scroll;
 }
+#chapters{
+	font-size:14px;
+	width:70%;
+}
+#chapters li{
+	list-style-type: none;
+	margin-left:0px;
+	padding:5px;
+}
 #canto1 li, #canto2 li,#canto3 li,#canto4 li{
 	list-style-type:none;
 	margin-left:-30px;
@@ -209,4 +218,13 @@ li.active,.active{
 .tab-content>.active{
 	margin-top:20px;
 	padding:4px;
+}
+.mpsp h2 {
+    font-size: 40px;
+    color: brown;
+}
+
+.mpsp p {
+    font-size: 20px;
+    font-weight: bold;
 }

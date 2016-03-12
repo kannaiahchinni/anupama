@@ -25,10 +25,10 @@
 		}).state('poet',{
 			url:'/poet',
 			templateUrl:'html/poet.html'
-		})/*.state('epic',{
+		}).state('epic',{
 			url:'/epic',
 			templateUrl:'html/epic.html'
-		})*/
+		})
 		$urlRouterProvider.otherwise('/');
 	}]).run(function($state, $rootScope,Index,service){
 		$("#menu-toggle").click(function(e) {
