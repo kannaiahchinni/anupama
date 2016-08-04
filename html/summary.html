@@ -9,6 +9,8 @@
 					<li ng-class="{active:current=='sloka2'}" ng-click="current ='sloka2'">Canto-II</li>
 					<li ng-class="{active:current=='sloka3'}" ng-click="current ='sloka3'">Canto-III</li>
 					<li ng-class="{active:current=='sloka4'}" ng-click="current ='sloka4'">Canto-IV</li>
+                    <li ng-class="{active:current=='sloka5'}" ng-click="current ='sloka5'">Canto-V</li>
+                    <li ng-class="{active:current=='sloka6'}" ng-click="current ='sloka6'">Canto-VI</li>
 				</ul>
 			</div>
 			
@@ -47,6 +49,25 @@
 					 <tabset> 
 					<tab ng-repeat="tab in cantos[0].canto4" heading="{{tab.title}}"
 						active="tab.active" disable="tab.disabled"> {{tab.desc}}
+					</tab> 
+					</tabset>
+				
+				</div>
+                <div ng-show="current == 'sloka5'">
+					<br/>
+					 <tabset> 
+					<tab ng-repeat="tab in cantos[0].canto5" heading="{{tab.title}}"
+						active="tab.active" disable="tab.disabled" >  <div ng-bind-html="tab.desc | trusted"></div>
+					</tab> 
+					</tabset>
+				
+				</div>
+                <div ng-show="current == 'sloka6'">
+					<br/>
+					 <tabset> 
+					<tab ng-repeat="tab in cantos[0].canto6" heading="{{tab.title}}"
+						active="tab.active" disable="tab.disabled">
+                        <div ng-bind-html="tab.desc | trusted"></div>
 					</tab> 
 					</tabset>
 				
