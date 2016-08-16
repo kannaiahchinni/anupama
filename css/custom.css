@@ -229,3 +229,6 @@ li.active,.active{
     font-size: 20px;
     font-weight: bold;
 }
+#sidebar-wrapper {
+	height:auto !important;
+}

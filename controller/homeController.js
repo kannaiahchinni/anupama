@@ -75,6 +75,7 @@
 			});
 			
 			service.getAllSlokas().success(function(data){
+
 				$scope.completeSlokas = data;
 				console.log(data);
 				$scope.slokas = $scope.completeSlokas[0].canto1;
@@ -106,6 +107,7 @@
 		}*/
 		
 		$scope.showAllSlokas = function(chapter){
+			$("ul").find(".in").removeClass("in");
 			$scope.sloka = true;
 			$scope.showInterface = false;
 			//$location.path("home/slokas");
