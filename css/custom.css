@@ -87,7 +87,7 @@ footer{
 	clear:both;
 }
 #canto1,#canto2,#canto3,#canto4, #canto5,#canto6{
-	max-height:400px;
+	max-height:220px;
 	font-size:13px;
 	overflow-y:scroll;
 }
